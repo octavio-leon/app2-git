@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<!--<link rel="stylesheet"href="css/jquery.mobie.icons-1.4.5.min.css"/>
+<link rel="stylesheet"href="css/jquery.mobie.structure-1.4.5.min.css"/>-->
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Datos personales del alumno</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Foto de perfil</h1>
+<div>
+<p>Esta es mi imagen de perfil</p>
+<br>
+</div>
+<div>
+ <img src="imagenes/foto de perfil.png" width="140" height="140"> 
+</div>
+</div>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Datos generales </h2>
+<p> Se muestra el nombre </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Fecha de nacimiento </h2>
+<p> Se muestra el dia, mes y año de nacimiento </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> DOMICILIO </h2>
+<p>  Aqui se muestra el domicilio del alumno </p>
+  </a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> DEPORTE FAVORITO </h2>
+<p> Se muestra el deporte que mas le agrada </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> OTROS GUSTOS E INTERESES </h2>
+<p> Muestra otros gustos del alumno </p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed"> 
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<div>
+<h4> Aplicacion uno </h4>
+<h4> Octavio Leon Amador </h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> Nombre </h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2> Octavio Leon Amador </h2>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion 1 OLA </h4>
+</div>
+</div>
+ 
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> Fecha de nacimiento </h1>
+</div>
+<div data-role="content" align="center">
+<div>
+ <h2> 9  de noviembre de 1999 </h2></div>
+ </div>
+<div data-role="footer" data-therme=”a” data-position="fixed">
+<h4>Aplicacion 1 OLA </h4>
+</div>
+</div>
+
+
+<div data-role"page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<hl> DOMICILIO </h1>
+</div>
+<div dala-role="content" align="center">
+<div>
+   <h2>16 norte 605 col. vista hermosa</h2></div>
+</div>
+<div data-role"footer" data-theme"a" data-postion"fixed">
+<h4>Aplicacion Uno OLA </h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>DEPORTE FAVORITO </h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <h2>Basquetbol</h2>
+ <img src="imagenes/deporte favorito.jpeg" width="50%" height="50%">
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Uno OLA </h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>GUSTOS E INTERESES</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Mis gustos son por ejemplo: escuchar musica sacar a pasear a mi perro </h2></div>
+<img src="imagenes/perros.jpg" width="50%" height"50%">
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Uno OLA </h4>
+</div>
+</div>
+
+
+
+</body>
+</html>
